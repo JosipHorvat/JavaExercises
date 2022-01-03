@@ -6,6 +6,8 @@ import java.util.Random;
 
 public class Lista {
 
+    public static final String[] names = {"Mike", "John", "Josip", "Marija", "Tina", "Ivana", "Aofie", "Boris", "Drago", "Lucky", "Steven" };
+
     public static final List list() {
         List l = new ArrayList();
         for(int i = 0; i< 5; i++){
@@ -21,7 +23,11 @@ public class Lista {
     }
 
     public static final int[] intArr(){
-        int[] a =  new int[]{45, 5, 5, 3, 2, 1};
+        int[] a =  new int[100];
+        int n = 1;
+        for (int i =0; i<a.length; i++){
+            a[i] = n++;
+        }
         return a;
     }
 
