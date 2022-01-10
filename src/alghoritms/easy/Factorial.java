@@ -1,8 +1,10 @@
 package alghoritms.easy;
 
+
 public class Factorial {
     public static void main(String[] args) {
-        System.out.println(  factorial(5));
+      Performer p = () -> System.out.println(factorial(5));
+      p.perform();
     }
      static Integer factorial(Integer n){
         int factorialSum = n;
